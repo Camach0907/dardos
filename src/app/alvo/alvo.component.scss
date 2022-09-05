@@ -1,0 +1,31 @@
+* {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.board {
+  width: 50%;
+  float:left;
+}
+
+.board svg {
+  height: 600px;
+  width: 600px;
+}
+
+#dartboard #areas g path:hover,
+#dartboard #areas g circle:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.tables{
+  float:right;
+  width: 50%;
+  margin-top:10%;
+}

@@ -1,0 +1,75 @@
+<div class="album py-5 bg-light">
+  <div class="container">
+
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">DARDOS</h1>
+        <p class="lead text-muted"> Bem vindo ao DARDOS. Esta é uma WebbApp para jogares Dardos com os teus amigos em casa. <br>
+        Basta comprares um alvo com dardos e começar a jogar!
+        </p>
+      </div>
+    </section>
+
+    <div class="row" style="margin-bottom:2%;">
+      <div class="btn-group col-md-2">
+
+        <span class="players">{{Njogadores + (Njogadores == 1 ? " Player" : " Players")}} </span>
+
+        <button type="button" class="btn btn-sm btn-outline-secondary" (click)="adiciona({event : $event})">+</button>
+        <button type="button" class="btn btn-sm btn-outline-secondary" (click)="retira({event : $event})">-</button>
+      </div>
+      <div class="btn-group col-md-4">
+        <span class="warning" *ngIf="ShowWarning">Tem de haver pelo menos <b>1 jogador</b>.</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+
+        <div class="card mb-4 box-shadow">
+            <img src="./assets/img/1.jpg" >
+          <div class="card-body">
+            <p class="card-text">Pontuação Descendente</p>
+            <div class="d-flex align-items-center">
+              <div class="btn-group">
+                <button class="btn btn-sm btn-outline-secondary" routerLink="/pd" [queryParams]="{players: Njogadores}" >Jogar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <img src="./assets/img/2.jpg">
+          <div class="card-body">
+            <p class="card-text">Cricket</p>
+            <div class="d-flex align-items-center">
+              <div class="btn-group">
+                <button class="btn btn-sm btn-outline-secondary" routerLink="/cricket" [disabled]='ShowWarning2' [queryParams]="{players: Njogadores}">Jogar</button>
+              </div>
+                <span class="warning ms-3" *ngIf="ShowWarning2">Mínimo <b>2 players</b> e no máximo <b>4</b>.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <img src="./assets/img/3.jpg">
+          <div class="card-body">
+            <p class="card-text">Pontuação Máxima</p>
+
+            <div class="d-flex align-items-center">
+              <div class="btn-group">
+                <button class="btn btn-sm btn-outline-secondary" routerLink="/pm" [queryParams]="{players: Njogadores}">Jogar</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

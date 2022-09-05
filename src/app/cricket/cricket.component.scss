@@ -1,0 +1,105 @@
+@media only screen and (max-width: 1200px) {
+
+  .chartCell {
+    height: 52px !important;
+  }
+
+  .numbers{
+    font-size: 30px !important;
+  }
+
+  .numbersB{
+    font-size: 30px !important;
+  }
+
+  .numbers2{
+    font-size: 26px !important;
+  }
+
+}
+
+.chartCell {
+  height: 80px;
+  z-index: 1;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #262626;
+  margin: 0 auto;
+}
+
+.numbers {
+  font-family: "Trebuchet MS";
+  font-size: 50px;
+  font-weight: bold;
+  color: #999;
+  height: 100%;
+  top: 5px;
+  float: left;
+  width: 50%;
+}
+
+.numbersB {
+  font-family: "Trebuchet MS";
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+  height: 100%;
+  top: 5px;
+  float: left;
+  width: 50%;
+}
+
+.numbers2{
+  font-family: "Trebuchet MS";
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  float: left;
+}
+
+p{
+  text-align: center;
+}
+
+.player {
+  font-family: "Trebuchet MS";
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+  height: 30px;
+  width: max-content;
+  text-align: center;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+}
+.p1{color: #00e1ff;}
+.p2{color: #ff0000;}
+.p3{color: #b700ff;}
+.p4{color: #1aff00;}
+
+.marka{
+  width: 50%;
+  float:right;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.markaa{
+  width: 50%;
+  height: 100%;
+}
+
+
+
+
+
+
